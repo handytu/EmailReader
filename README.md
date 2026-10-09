@@ -1,20 +1,22 @@
 # EmailReader
 
-Ứng dụng đọc email đa tài khoản trên Windows, xây dựng bằng Python và PySide6.
+**English** | [Tiếng Việt](README.vi.md)
 
-## Tính năng chính
+Multi-account email reader for Windows, built with Python and PySide6.
 
-- Hỗ trợ Outlook/Hotmail, Gmail, Yahoo và máy chủ IMAP tùy chỉnh.
-- Thêm từng tài khoản hoặc nhập danh sách từ file TXT.
-- Đọc thư HTML, tìm kiếm và sao chép mã xác minh.
-- Lưu tài khoản, cache thư và khôi phục phiên khi mở lại app.
-- Tự làm mới tài khoản đang xem mỗi 10 giây.
-- Giao diện tối, chỉnh màu tên app và tùy chọn chặn ảnh từ xa.
-- Nhấn **Ctrl + W** để đóng app.
+## Main features
 
-## Chạy từ source
+- Supports Outlook/Hotmail, Gmail, Yahoo and custom IMAP servers.
+- Add individual accounts or import an account list from a TXT file.
+- Read HTML emails, search messages and copy verification codes.
+- Save accounts and cached mail, and restore your session on startup.
+- Automatically refresh the current account every 10 seconds.
+- Dark interface, customizable app name colors and optional remote image blocking.
+- Press **Ctrl + W** to close the app.
 
-Yêu cầu Windows và Python 3.11.
+## Run from source
+
+Requires Windows and Python 3.11.
 
 ```powershell
 py -3.11 -m venv .venv
@@ -23,17 +25,17 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Thêm tài khoản
+## Add accounts
 
-Chọn **Add accounts → Add single account**, hoặc nhập file TXT theo định dạng:
+Select **Add accounts → Add single account**, or import a TXT file using this format:
 
 ```text
 email@example.com|password
 ```
 
-Outlook hỗ trợ đăng nhập bằng mã Microsoft. Với Gmail/Yahoo, sử dụng mật khẩu ứng dụng khi nhà cung cấp yêu cầu.
+Outlook supports Microsoft device code sign-in. For Gmail/Yahoo, use an app password when required by your provider.
 
-## Build exe bằng Nuitka
+## Build a Windows executable with Nuitka
 
 ```powershell
 py -3.11 -m venv .build-venv
@@ -41,10 +43,10 @@ py -3.11 -m venv .build-venv
 powershell -ExecutionPolicy Bypass -File .\build-nuitka.ps1
 ```
 
-Bản build nằm trong `release/nuitka-*/main.dist/`. Giữ nguyên toàn bộ thư mục khi chạy `EmailReader.exe`.
+Build output is in `release/nuitka-*/main.dist/`. Keep the entire folder together when running `EmailReader.exe`.
 
-## Dữ liệu
+## Data
 
-Tài khoản và cache được lưu trong thư mục `data` cạnh app. Thông tin đăng nhập được bảo vệ bằng Windows DPAPI, gắn với người dùng Windows hiện tại. Khi nâng cấp, giữ lại thư mục `data` để tiếp tục dùng phiên đã lưu.
+Accounts and cached mail are stored in the `data` folder beside the app. Credentials are protected with Windows DPAPI and tied to the current Windows user. Keep the `data` folder when upgrading to preserve your session.
 
-File tài khoản, cache, log và bản build được loại khỏi Git bằng `.gitignore`.
+Account files, cached mail, logs and build outputs are excluded from Git by `.gitignore`.
