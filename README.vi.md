@@ -6,7 +6,7 @@
 
 ## Tính năng chính
 
-- Hỗ trợ Outlook/Hotmail, Gmail, Yahoo và máy chủ IMAP tùy chỉnh.
+- Hỗ trợ Outlook/Hotmail và máy chủ IMAP tùy chỉnh.
 - Thêm từng tài khoản hoặc nhập danh sách từ file TXT.
 - Đọc thư HTML, tìm kiếm và sao chép mã xác minh.
 - Lưu tài khoản, cache thư và khôi phục phiên khi mở lại app.
@@ -33,7 +33,7 @@ Chọn **Add accounts → Add single account**, hoặc nhập file TXT theo đ�
 email@example.com|password
 ```
 
-Outlook hỗ trợ đăng nhập bằng mã Microsoft. Với Gmail/Yahoo, sử dụng mật khẩu ứng dụng khi nhà cung cấp yêu cầu.
+Outlook hỗ trợ đăng nhập bằng mã Microsoft. Cấu hình máy chủ IMAP khác được hỗ trợ trong **Advanced**.
 
 ## Build exe bằng Nuitka
 

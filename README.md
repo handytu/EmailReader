@@ -6,7 +6,7 @@ Multi-account email reader for Windows, built with Python and PySide6.
 
 ## Main features
 
-- Supports Outlook/Hotmail, Gmail, Yahoo and custom IMAP servers.
+- Supports Outlook/Hotmail and custom IMAP servers.
 - Add individual accounts or import an account list from a TXT file.
 - Read HTML emails, search messages and copy verification codes.
 - Save accounts and cached mail, and restore your session on startup.
@@ -33,7 +33,7 @@ Select **Add accounts → Add single account**, or import a TXT file using this 
 email@example.com|password
 ```
 
-Outlook supports Microsoft device code sign-in. For Gmail/Yahoo, use an app password when required by your provider.
+Outlook supports Microsoft device code sign-in. Configure other supported IMAP servers in **Advanced**.
 
 ## Build a Windows executable with Nuitka
 

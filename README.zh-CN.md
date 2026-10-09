@@ -6,7 +6,7 @@
 
 ## 主要功能
 
-- 支持 Outlook/Hotmail、Gmail、Yahoo 和自定义 IMAP 服务器。
+- 支持 Outlook/Hotmail 和自定义 IMAP 服务器。
 - 单独添加账号，或从 TXT 文件导入账号列表。
 - 阅读 HTML 邮件、搜索邮件和复制验证码。
 - 保存账号和邮件缓存，启动时恢复上次会话。
@@ -33,7 +33,7 @@ python main.py
 email@example.com|password
 ```
 
-Outlook 支持通过 Microsoft 设备代码登录。对于 Gmail/Yahoo，如果服务提供商要求，请使用应用专用密码。
+Outlook 支持通过 Microsoft 设备代码登录。其他支持的 IMAP 服务器可在 **Advanced** 中配置。
 
 ## 使用 Nuitka 构建 Windows 可执行文件
 
