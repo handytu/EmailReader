@@ -1,0 +1,33 @@
+# Personal accounts, credentials, settings and mail cache
+/data/
+/logs/
+/emails.txt
+/.env
+/.env.*
+*.db
+*.db-shm
+*.db-wal
+accounts.bin
+
+# Python environments and generated files
+/.venv/
+/.build-venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build outputs and source snapshots
+/build/
+/build-protected/
+/dist/
+/release/
+/backups/
+/artifacts/
+*.log
+
+# Local agent and editor configuration
+/.codex/
+/.agents/
+/.aws/
+/.vscode/
+/.github-upload/

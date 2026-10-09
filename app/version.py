@@ -1,0 +1,3 @@
+APP_NAME = "EmailReader"
+VERSION = "9.4.2"
+WINDOWS_VERSION = VERSION + ".0"
