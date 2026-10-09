@@ -1,6 +1,6 @@
 # EmailReader
 
-[English](README.md) | **Tiếng Việt**
+[English](README.md) | **Tiếng Việt** | [简体中文](README.zh-CN.md)
 
 Ứng dụng đọc email đa tài khoản trên Windows, xây dựng bằng Python và PySide6.
 
